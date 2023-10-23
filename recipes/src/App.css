@@ -1,0 +1,51 @@
+
+ 
+
+.recipe-head{
+font-family: 'Times New Roman', Times, serif;
+}
+.quote{
+    color:#82ad98;
+    font-family: sans-serif;
+}
+.quote-by{
+    color:#3c763d;
+    font-family: cursive;
+}
+.search{
+    border-radius: 25px;
+    border: 1px solid grey;
+   
+}
+
+.btn-home{
+    background-color: orangered;
+    border-radius: 25px;
+    width: 60px;
+    color: white;
+    border: none;
+ 
+
+}
+.img-card{
+    height: 220px;
+}
+.btn-card{
+    background-color: orangered;
+    border-radius: 25px;
+    width: 170px;
+    color: white; 
+    margin-top: 10px;
+    font-size: 20px;
+    border: none; padding: 5px;
+    
+  
+
+}
+.btn-card:hover{
+    background-color: orangered;
+    color: white; 
+}
+.search::placeholder{
+    color:red;
+}
