@@ -56,7 +56,7 @@ const Eagle = () => {
 
 
                         {/* Details */}
-                        <h4 className="mt-3 fs-3 ms-5"> Dog</h4>
+                        <h4 className="mt-3 fs-3 ms-5"> Eagle</h4>
                         <div className="row">
                             <div className="col-md-3">
                                 <p className="text-muted mb-1 ms-5">Animals Gallery</p>

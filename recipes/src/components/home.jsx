@@ -1,8 +1,11 @@
 import Data from './Data.jsx'
+import { useState } from 'react';
 
 const Home = () => {
+  const [product, setProduct] = useState(Data)
+
   const Recipes = () => {
-    return Data.map((obj) => (
+    return product.map((obj) => (
       <>
         <div className="col-md-3 mb-3">
 
@@ -18,7 +21,17 @@ const Home = () => {
         </div>
       </>
     ))
-  }
+  };
+
+
+  const searchProduct = (e) => {
+    const search = e.target.value
+    let filteredProduct = Data.filter((product) => {
+      return product.Brand.toLowerCase().includes(search.toLowerCase());
+    });
+    setProduct(filteredProduct)
+  };
+
   return (
     <div>
 
@@ -29,7 +42,7 @@ const Home = () => {
           <h6 className="text-center quote-by mb-4">~Jamie Oliver</h6>
           <div className='input-group'>
             <input type="search" placeholder='Search...' className='form-control   search form-control-lg px-4 text-dark' />
-            <button className=" btn-home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
+            <button className=" btn-home" onChange={searchProduct} ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg></button>
           </div>
