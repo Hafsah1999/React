@@ -1,7 +1,21 @@
+import React from 'react'
 import Data from './Data'
 
 
 const Library = () => {
+
+  const [product, setProduct] = React.useState(Data)
+
+  const searchProduct = (e) => {
+    const search = e.target.value
+    let filteredProduct = Data.filter((product) => {
+      return product.brand.toLowerCase().includes(search.toLowerCase());
+    });
+    setProduct(filteredProduct)
+
+
+  }
+
   const musicLibrary = () => {
     return Data.map((obj) => (
       <>
@@ -24,7 +38,7 @@ const Library = () => {
         <div className="container ">
           <div className="row">
 
-            <input type="search" placeholder='Search' className='form-control w-50 d-block m-auto' />
+            <input type="search" placeholder='Search' onChange={searchProduct} className='form-control w-50 d-block m-auto' />
 
 
 
