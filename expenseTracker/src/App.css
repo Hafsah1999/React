@@ -1,0 +1,109 @@
+.card{
+  
+  border: none;
+  width: 400px;
+  
+}
+h1{
+color:rgb(167, 85, 56);
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+font-size: 60px;
+}
+h1:hover{
+text-shadow: 0px 0px 5px white, 0px 0px 10px white,
+0px 0px 15px orangered, 0px 0px 20px orangered, 0px 0px 25px orangered;
+}
+h2{
+  color:rgb(167, 85, 56);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+ 
+  }
+  h2:hover{
+  text-shadow: 0px 0px 5px white, 0px 0px 10px white,
+  0px 0px 15px orangered, 0px 0px 20px orangered, 0px 0px 25px orangered;
+  }
+  h4{
+    color:rgb(190, 131, 131);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  
+    }
+    h3{
+      color:rgb(167, 85, 56);
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+     
+      }
+      h3:hover{
+      text-shadow: 0px 0px 5px white, 0px 0px 10px white,
+      0px 0px 15px orangered, 0px 0px 20px orangered, 0px 0px 25px orangered;
+      }
+      h6{
+        color:rgb(167, 85, 56);
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+       
+        }
+        h6:hover{
+        text-shadow: 0px 0px 5px white, 0px 0px 10px white,
+        0px 0px 15px orangered, 0px 0px 20px orangered, 0px 0px 25px orangered;
+        }
+        .minus{
+         
+    color:rgb(190, 131, 131);
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        }
+        label{
+          color:rgb(167, 85, 56);
+          font-weight: bold;
+          font-family: 'Times New Roman', Times, serif;
+        }
+.input::placeholder{
+  color: rgb(179, 130, 112);
+  font-size: large;
+  padding: 4px;
+  font-family: cursive;
+}
+.btn{
+  font-size: 20px;
+  font-family: serif;
+  color:white;
+  background-color:rgb(167, 85, 56);
+}
+.btn:hover{
+  box-shadow: 0px 0px 5px white, 0px 0px 10px white,
+0px 0px 15px orangered, 0px 0px 20px orangered, 0px 0px 25px orangered;
+color: white;
+}
+.input{
+  border: none;
+}
+.input:hover{
+  box-shadow: 0px 0px 5px white, 0px 0px 10px white,
+  0px 0px 15px orangered, 0px 0px 20px orangered, 0px 0px 25px orangered;
+}
+.customer{
+  color: rgb(167, 85, 56);
+}
+.login{
+  color: rgb(179, 130, 112);
+}
+.login:hover{
+  text-shadow: 0px 0px 5px orangered, 0px 0px 10px orangered;
+}
+li{
+  background-color: #494646;
+
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+
+  list-style-type: none;
+}
+
+

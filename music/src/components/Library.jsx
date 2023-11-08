@@ -17,7 +17,7 @@ const Library = () => {
   }
 
   const musicLibrary = () => {
-    return Data.map((obj) => (
+    return product.map((obj) => (
       <>
         <div className="col-md-2">
           <div className="card mb-3 bg-light bg-opacity-25 shadow-lg">
